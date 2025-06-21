@@ -1,14 +1,13 @@
-package com.emp.Controller;
+package com.emp.controller;
 
 
-import com.emp.Entity.Employee;
-import com.emp.Entity.Request.EmployeeRequest;
-import com.emp.Service.EmployeeService;
+import com.emp.entity.Employee;
+import com.emp.entity.Request.EmployeeRequest;
+import com.emp.service.EmployeeService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Size;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

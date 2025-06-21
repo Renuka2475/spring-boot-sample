@@ -1,9 +1,9 @@
-package com.emp.Service;
+package com.emp.service;
 
 
-import com.emp.DAO.EmployeeRepository;
-import com.emp.Entity.Employee;
-import com.emp.Entity.Request.EmployeeRequest;
+import com.emp.dao.EmployeeRepository;
+import com.emp.entity.Employee;
+import com.emp.entity.Request.EmployeeRequest;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

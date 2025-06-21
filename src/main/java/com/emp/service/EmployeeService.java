@@ -1,7 +1,7 @@
-package com.emp.Service;
+package com.emp.service;
 
-import com.emp.Entity.Employee;
-import com.emp.Entity.Request.EmployeeRequest;
+import com.emp.entity.Employee;
+import com.emp.entity.Request.EmployeeRequest;
 
 import java.util.List;
 
