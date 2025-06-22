@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/Employee")
+@RequestMapping("/api/employee")
 @Tag(name="Employee Rest API Endpoints",description = "Operations related to Employees")
 public class EmployeeRestController {
 
@@ -29,7 +29,7 @@ public class EmployeeRestController {
 
 	@Operation(summary="Retrieve Employees",description = "Get all employee details")
 	@ResponseStatus(HttpStatus.OK)
-	@GetMapping
+	@GetMapping("/all")
 	public List<Employee> findall(){
 		
 		return employeeService.findAll();
@@ -45,8 +45,8 @@ public class EmployeeRestController {
 
 	@Operation(summary = "Create a new employee", description = "Insert a new Employee record")
 	@ResponseStatus(HttpStatus.CREATED)
-	@PostMapping
-	public Employee insertRecord(@Valid @RequestBody EmployeeRequest employee){
+	@PostMapping("/insert")
+	public Employee insertRecord(@RequestBody EmployeeRequest employee){
 		Employee newEmpRecord = employeeService.save(employee);
 		return newEmpRecord;
 
